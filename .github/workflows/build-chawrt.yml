@@ -106,7 +106,7 @@ jobs:
         cp bin/targets/mediatek/filogic/*.fip output/ || echo "No sysupgrade files found"
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: firmware-${{ github.event.inputs.target }}
         path: output/
